@@ -1,0 +1,5 @@
+/* Importing the component library */
+@import url("https://shoreui.netlify.app/css/base.css");
+
+@import "/css/styles.css";
+@import "/css/home.css";
