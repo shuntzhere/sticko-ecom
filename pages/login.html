@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/55aa2069c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/main.css" />
+    <title>Log In | Sticko</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav flex flex-items-center justify-between">
+          <div class="header__nav--logo">
+            <a class="header__nav--brand" href="#">
+              <span>S</span>
+              <span>t</span>
+              <span>i</span>
+              <span>c</span>
+              <span>k</span>
+              <span>o.</span>
+            </a>
+          </div>
+
+          <ul class="header__nav--menu flex justify-between">
+            <a href="/pages/signup.html" class="btn">Sign Up</a>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="form__container">
+        <form id="login-form" class="flex flex-col flex-items-center">
+          <h2>Log In</h2>
+          <p>with</p>
+          <div>
+            <button class="fab-btn">
+              <i class="fab fa-google fa-2x" style="color: white"></i>
+            </button>
+            <button class="fab-btn">
+              <i class="fab fa-facebook fa-2x" style="color: white"></i>
+            </button>
+            <button class="fab-btn">
+              <i class="fab fa-twitter fa-2x" style="color: white"></i>
+            </button>
+          </div>
+          <p>or</p>
+
+          <div class="input__form">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="input__form">
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+          </div>
+
+          <div>
+            <a class="forget__password" href="#">Forgot Password ?</a>
+          </div>
+          <button class="btn btn-submit" type="submit">Log In</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
