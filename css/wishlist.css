@@ -17,6 +17,10 @@
   top: 5%;
 }
 
+.header__icon {
+  margin-top: 1rem;
+}
+
 .cart__header {
   margin: 2rem auto;
   font-family: "Cinzel", serif;
