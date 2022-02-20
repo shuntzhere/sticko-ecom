@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/55aa2069c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/main.css" />
+    <title>Home | Sticko</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav flex flex-items-center justify-between">
+          <div class="header__nav--logo">
+            <a class="header__nav--brand" href="#">
+              <span>S</span>
+              <span>t</span>
+              <span>i</span>
+              <span>c</span>
+              <span>k</span>
+              <span>o.</span>
+            </a>
+          </div>
+
+          <ul class="header__nav--menu flex justify-between">
+            <li class="header__nav--menu-item">
+              <a class="nav-link avatar" href="#">
+                <i class="fas fa-heart fa-2x"></i>
+              </a>
+            </li>
+            <li class="header__nav--menu-item avatar">
+              <a class="nav-link" href="#">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </a>
+            </li>
+            <li class="header__nav--menu-item avatar">
+              <a class="nav-link" href="#">
+                <i class="fas fa-user fa-2x"></i>
+              </a>
+            </li>
+            <a href="./pages/login.html" class="btn">Login</a>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main flex justify-between">
+        <img
+          class="main__content--image"
+          src="https://images.unsplash.com/photo-1591844480689-94168c4d1d64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+          alt="hero-img"
+        />
+        <div class="main__content flex flex-col">
+          <div class="main__content--info">
+            <h2 class="main__content--title">Serving Stickers</h2>
+            <p class="main__content--description">
+              With a purpose to change the world for good.
+            </p>
+          </div>
+
+          <div class="main__content--categories">
+            <h4>See for yourself</h4>
+            <div class="category__name endangered">
+              <a href="/pages/listings.html" class="category__name--title"
+                >Endangered</a
+              >
+            </div>
+            <div class="category__name extinct">
+              <a href="/pages/listings.html" class="category__name--title"
+                >Extinct</a
+              >
+            </div>
+            <div class="category__name vulnerable">
+              <a href="/pages/listings.html" class="category__name--title"
+                >Vulnerable</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
