@@ -1,0 +1,106 @@
+/* nav container  */
+
+.header__nav {
+  background-color: transparent;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.header__nav--brand {
+  font-size: 1.8rem;
+  font-weight: var(--font-medium);
+  font-family: "Lobster", cursive;
+}
+
+.header__nav--search {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.nav__search {
+  width: 400px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1px;
+}
+
+.header__nav--menu > li {
+  list-style: none;
+}
+
+.btn {
+  background-color: var(--color-secondary);
+  font-size: 0.8rem;
+}
+
+/* main container  */
+
+.main {
+  width: 1280px;
+  height: 80vh;
+  overflow-y: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main__content {
+  width: 50%;
+}
+
+.main__content--img {
+  height: 50%;
+  width: 500px;
+}
+
+.main__content--info {
+  position: relative;
+  height: 40%;
+}
+
+.main__content--title {
+  position: absolute;
+  font-size: 5rem;
+  font-family: "Cinzel", serif;
+  font-weight: var(--font-heavy);
+  line-height: 5rem;
+  word-wrap: break-word;
+  color: var(--color-secondary);
+}
+
+.main__content--description {
+  font-size: 1.5rem;
+  font-family: "Cinzel", serif;
+  font-weight: var(--font-medium);
+  position: absolute;
+  top: 70%;
+  color: var(--color-secondary);
+}
+
+.main__content--categories {
+  font-family: "Cinzel", serif;
+  font-weight: var(--font-regular);
+}
+
+.category__name {
+  width: 50%;
+  background-color: var(--color-secondary);
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 5px 60px rgba(0, 0, 0, 0.12), 0 1px 40px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+}
+
+.category__name:hover {
+  transform: scale(1.1);
+}
+
+.category__name--title {
+  font-weight: var(--font-regualar);
+  font-size: 1rem;
+}
