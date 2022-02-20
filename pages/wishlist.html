@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/55aa2069c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/main.css" />
+    <title>Wishlist</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav flex flex-items-center justify-between">
+          <div class="header__nav--logo">
+            <a class="header__nav--brand" href="./index.html">
+              <span>S</span>
+              <span>t</span>
+              <span>i</span>
+              <span>c</span>
+              <span>k</span>
+              <span>o.</span>
+            </a>
+          </div>
+
+          <div class="header__nav--search">
+            <i class="fas fa-search fa-2x" style="color: black"></i>
+            <input type="search" class="nav__search" placeholder="Search" />
+          </div>
+
+          <ul class="header__nav--menu flex justify-between">
+            <li class="header__nav--menu-item">
+              <a class="nav-link avatar" href="/pages/wishlist.html">
+                <i class="fas fa-heart fa-2x header__icon"></i>
+              </a>
+            </li>
+            <li class="header__nav--menu-item avatar">
+              <a class="nav-link" href="/pages/cart.html">
+                <i class="fas fa-shopping-cart fa-2x header__icon"></i>
+              </a>
+            </li>
+            <li class="header__nav--menu-item avatar">
+              <a class="nav-link" href="#">
+                <i class="fas fa-user fa-2x header__icon"></i>
+              </a>
+            </li>
+            <a class="btn">Login</a>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="cards__wishlist">
+        <h1 class="cart__header">Your Wishlist</h1>
+        <div class="cart-container flex justify-evenly">
+          <div class="card">
+            <i class="fas fa-heart fa-2x card__svg" style="color: red"></i>
+            <img src="/assets/image/leatherback.jpg" class="card-image" />
+
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">20 units</p>
+                <h4 class="rating">Rs. 3000</h4>
+              </div>
+              <button class="btn primary-btn" type="button">
+                Move to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-heart fa-2x card__svg" style="color: red"></i>
+            <img src="/assets/image/leatherback.jpg" class="card-image" />
+
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">20 units</p>
+                <h4 class="rating">Rs. 3000</h4>
+              </div>
+              <button class="btn primary-btn" type="button">
+                Move to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-heart fa-2x card__svg" style="color: red"></i>
+            <img src="/assets/image/leatherback.jpg" class="card-image" />
+
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">20 units</p>
+                <h4 class="rating">Rs. 3000</h4>
+              </div>
+              <button class="btn primary-btn" type="button">
+                Move to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
