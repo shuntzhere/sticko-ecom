@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/55aa2069c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/main.css" />
+    <title>Product List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav flex flex-items-center justify-between">
+          <div class="header__nav--logo">
+            <a class="header__nav--brand" href="#">
+              <span>S</span>
+              <span>t</span>
+              <span>i</span>
+              <span>c</span>
+              <span>k</span>
+              <span>o.</span>
+            </a>
+          </div>
+
+          <div class="header__nav--search">
+            <i class="fas fa-search fa-2x" style="color: black"></i>
+            <input type="search" class="nav__search" placeholder="Search" />
+          </div>
+
+          <ul class="header__nav--menu flex justify-between">
+            <li class="header__nav--menu-item">
+              <a class="nav-link avatar" href="/pages/wishlist.html">
+                <div class="number">6</div>
+                <i
+                  class="fas fa-heart fa-2x header__icon"
+                  style="color: red"
+                ></i>
+              </a>
+            </li>
+            <li class="header__nav--menu-item avatar">
+              <a class="nav-link" href="/pages/cart.html">
+                <i class="fas fa-shopping-cart fa-2x header__icon"></i>
+              </a>
+            </li>
+            <li class="header__nav--menu-item avatar">
+              <a class="nav-link" href="#">
+                <i class="fas fa-user fa-2x header__icon"></i>
+              </a>
+            </li>
+            <a class="btn">Login</a>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="listings">
+        <aside class="listing__sidebar">
+          <div
+            class="listings__sidebar--filter flex flex-items-center justify-between"
+          >
+            <div class="listings__sidebar--header">Filters</div>
+            <div>
+              <a href="#">Clear All</a>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="listings__sidebar--category">
+            <div class="listings__sidebar--title">Category</div>
+            <form class="flex flex-col">
+              <div class="form__group flex flex-items-center justify-between">
+                <label for="category__1">Endangered</label>
+                <input type="checkbox" id="category__1" value="Endangered" />
+              </div>
+              <div class="form__group flex flex-items-center justify-between">
+                <label for="category__2">Vulnerable</label>
+                <input type="checkbox" id="category__2" value="Vulnerable" />
+              </div>
+              <div class="form__group flex flex-items-center justify-between">
+                <label for="category__3">Extinct</label>
+                <input type="checkbox" id="category__1" value="Extinct" />
+              </div>
+            </form>
+          </div>
+          <div class="divider"></div>
+
+          <div class="listings__sidebar--rating flex flex-col">
+            <div class="listings__sidebar--title">Ratings</div>
+            <div class="form__group flex flex-items-center justify-between">
+              <label for="4__stars">4 stars or more</label>
+              <input type="radio" id="4__star" name="ratings" value="4" />
+            </div>
+            <div class="form__group flex flex-items-center justify-between">
+              <label for="3__stars">3 stars or more</label>
+              <input type="radio" id="3__star" name="ratings" value="3" />
+            </div>
+            <div class="form__group flex flex-items-center justify-between">
+              <label for="2__stars">2 stars or more</label>
+              <input type="radio" id="2__star" name="ratings" value="2" />
+            </div>
+            <div class="form__group flex flex-items-center justify-between">
+              <label for="1__stars">1 star or more</label>
+              <input type="radio" id="1__star" name="ratings" value="1" />
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="listings__sidebar--category flex flex-col">
+            <div class="listings__sidebar--title">Sort by</div>
+            <div class="form__group flex flex-items-center justify-between">
+              <label for="sort__increase">Credit- Low to High</label>
+              <input
+                type="radio"
+                id="sort__increase"
+                name="sort"
+                value="toHigh"
+              />
+            </div>
+            <div class="form__group flex flex-items-center justify-between">
+              <label for="sort__decrease">Credit- High to Low</label>
+              <input
+                type="radio"
+                id="sort__decrease"
+                name="sort"
+                value="toLow"
+              />
+            </div>
+          </div>
+        </aside>
+
+        <main class="listing__main">
+          <div class="card badge-card">
+            <div class="vertical-badge">Endangered</div>
+            <img
+              class="card-image"
+              src="/assets/image/leatherback.jpg"
+              alt="image"
+            />
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">+ <span>5</span> - of</p>
+                <h4 class="rating">3000</h4>
+              </div>
+              <div class="flex flex-items-center justify-between">
+                <i
+                  class="fas fa-heart fa-2x listing__svg"
+                  style="color: red"
+                ></i>
+                <button class="btn primary-btn" type="button">Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card badge-card">
+            <div class="vertical-badge extinct">Extinct</div>
+            <img
+              class="card-image"
+              src="/assets/image/leatherback.jpg"
+              alt="image"
+            />
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">+ <span>0</span> - of</p>
+                <h4 class="rating">0</h4>
+              </div>
+              <div class="flex flex-items-center justify-between">
+                <i
+                  class="fas fa-heart fa-2x listing__svg"
+                  style="color: red"
+                ></i>
+                <button class="btn primary-btn" type="button">Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card badge-card">
+            <div class="vertical-badge">Endangered</div>
+            <img
+              class="card-image"
+              src="/assets/image/leatherback.jpg"
+              alt="image"
+            />
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">+ <span>17</span> - of</p>
+                <h4 class="rating">3000</h4>
+              </div>
+              <div class="flex flex-items-center justify-between">
+                <i
+                  class="fas fa-heart fa-2x listing__svg"
+                  style="color: red"
+                ></i>
+                <button class="btn primary-btn" type="button">Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card badge-card">
+            <div class="vertical-badge vulnerable">Vulnerable</div>
+            <img
+              class="card-image"
+              src="/assets/image/leatherback.jpg"
+              alt="image"
+            />
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">+ <span>18</span> - of</p>
+                <h4 class="rating">50000</h4>
+              </div>
+              <div class="flex flex-items-center justify-between">
+                <i
+                  class="fas fa-heart fa-2x listing__svg"
+                  style="color: red"
+                ></i>
+                <button class="btn primary-btn" type="button">Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card badge-card">
+            <div class="vertical-badge extinct">Vulnerable</div>
+            <img
+              class="card-image"
+              src="/assets/image/leatherback.jpg"
+              alt="image"
+            />
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">+ <span>0</span> - of</p>
+                <h4 class="rating">0</h4>
+              </div>
+              <div class="flex flex-items-center justify-between">
+                <i
+                  class="fas fa-heart fa-2x listing__svg"
+                  style="color: red"
+                ></i>
+                <button class="btn primary-btn" type="button">Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card badge-card">
+            <div class="vertical-badge vulnerable">Vulnerable</div>
+            <img
+              class="card-image"
+              src="/assets/image/leatherback.jpg"
+              alt="image"
+            />
+            <div class="card-content">
+              <h3 class="card-header">Leatherbacks</h3>
+              <p class="card-text">On the verge of extinction.</p>
+              <div class="card-info flex flex-items-center justify-around">
+                <p class="change__cart">+ <span>20</span> - of</p>
+                <h4 class="rating">50000</h4>
+              </div>
+              <div class="flex flex-items-center justify-between">
+                <i
+                  class="fas fa-heart fa-2x listing__svg"
+                  style="color: red"
+                ></i>
+                <button class="btn primary-btn" type="button">Cart</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
