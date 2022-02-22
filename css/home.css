@@ -83,11 +83,12 @@
 
 .main__content--categories {
   font-family: "Cinzel", serif;
-  font-weight: var(--font-regular);
+  font-weight: var(--font-medium);
+  color: var(--color-secondary);
 }
 
 .category__name {
-  width: 50%;
+  width: 60%;
   background-color: var(--color-secondary);
   margin: 1.5rem 0;
   padding: 1.5rem;
@@ -101,6 +102,8 @@
 }
 
 .category__name--title {
+  display: block;
+  cursor: pointer;
   font-weight: var(--font-regualar);
   font-size: 1rem;
 }

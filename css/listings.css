@@ -37,6 +37,10 @@
   padding: 0.2rem;
 }
 
+.endangered {
+  background-color: var(--color-danger);
+}
+
 .extinct {
   background-color: var(--color-black);
 }
